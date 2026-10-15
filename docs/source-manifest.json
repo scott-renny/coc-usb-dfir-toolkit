@@ -1,0 +1,365 @@
+{
+  "purpose": "Public source edition file hashes; not an operative USB release manifest",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 372,
+      "sha256": "dbc75eda2c9e2694efb56441bda6f15c353125f78ee7d301c27ea3f7696ec771"
+    },
+    {
+      "path": "COC/docs/CAPABILITY-COVERAGE.md",
+      "bytes": 5905,
+      "sha256": "7a4c8e706c7070f83f425e43d7c902c37cf524190b9734f634fb5caa981c9916"
+    },
+    {
+      "path": "COC/docs/COMBINED-FIELD-TOOLS.md",
+      "bytes": 7526,
+      "sha256": "67b3297b5cbe36d57c010c1e1126a694d3e0cf9a1234719affbdaee337464630"
+    },
+    {
+      "path": "COC/docs/FIELD-OPERATIONS.md",
+      "bytes": 6866,
+      "sha256": "350c1e1243a6ff251ed99f7c8442f6ad9ae04ffd4d03fc96594ac6317122e20a"
+    },
+    {
+      "path": "COC/docs/OPERATIONS-MANAGER.md",
+      "bytes": 8756,
+      "sha256": "3a8305dad0758602422ff1c0e1c9da8a75833a8d884344852239a115bd4c2999"
+    },
+    {
+      "path": "COC/docs/RESPONSE-PLAYBOOKS.md",
+      "bytes": 10632,
+      "sha256": "2ec7263bba5b8548bd84dc650977547c91b2ac88f0671c74c9609468fb97bb83"
+    },
+    {
+      "path": "COC/docs/SPECIALIST-INVESTIGATIONS.md",
+      "bytes": 9382,
+      "sha256": "69ff63c742a4ad1637d2fd8b0d8c22f2539c2435b363d9dc22c72ae4f54b45a0"
+    },
+    {
+      "path": "COC/lab/Offline-Analysis/coc-lab-analyze.py",
+      "bytes": 7520,
+      "sha256": "95ebaafd68b347eab64367f90b1da5051caa1a7255c22d20d92f6d9c55519410"
+    },
+    {
+      "path": "COC/lab/Offline-Analysis/coc-practice.rules",
+      "bytes": 147,
+      "sha256": "41f76351b4b84fd428dba14efda87b8e3c39b07815ed696d136818b5165b3605"
+    },
+    {
+      "path": "COC/lab/Offline-Analysis/images.json",
+      "bytes": 1638,
+      "sha256": "5edc6271772e41365749f48d759e47814b3e336b963d6e74571fe2fa2cbc2fad"
+    },
+    {
+      "path": "COC/launchers/linux/coc-security.sh",
+      "bytes": 307,
+      "sha256": "3a65b866132960b1f81d9588dc8c0e98fb2972953a7b6352114a81f88a263414"
+    },
+    {
+      "path": "COC/launchers/linux/coc_security.py",
+      "bytes": 23402,
+      "sha256": "e82c7bf7ec8442aa9e422f650ce75d6d6571185e23e553f05583cc1ce8bec46b"
+    },
+    {
+      "path": "COC/launchers/windows/advanced_pipeline.py",
+      "bytes": 8138,
+      "sha256": "6fa20ea8f809df96c49be8a663c7d66ec03c4d17b4afa34f1a49d19fdd47cf4e"
+    },
+    {
+      "path": "COC/launchers/windows/advanced_worker.py",
+      "bytes": 4718,
+      "sha256": "53e221e60c129c2910c0bf016b951d4778096a9dcb3ef8fb68187f5e19beeb19"
+    },
+    {
+      "path": "COC/launchers/windows/case_review.py",
+      "bytes": 4826,
+      "sha256": "223ce904bc190a6610f51b3c2fe859a06d6304a16df7abb5fb4b059ef9b6b79e"
+    },
+    {
+      "path": "COC/launchers/windows/COC.Core.psm1",
+      "bytes": 17224,
+      "sha256": "3435dd4cc6f0fe94451c1dad9a409e3c6d0d9f91e40b95af0401616dbbc4d686"
+    },
+    {
+      "path": "COC/launchers/windows/COC.Menu.psm1",
+      "bytes": 4146,
+      "sha256": "2c25c12b0ee4903461a3945ab2c4188916d514d47198acd074e8855dae348826"
+    },
+    {
+      "path": "COC/launchers/windows/COC.Playbooks.psm1",
+      "bytes": 5800,
+      "sha256": "df37cde0281ef327e7dd56a2a79031372b7dc0edb5e3f12fa1557d15c9664a23"
+    },
+    {
+      "path": "COC/launchers/windows/COCTlsh.java",
+      "bytes": 1171,
+      "sha256": "2270c58e976c8fc43b64be9410800905cafdcf0e749c9c6c82d5e6be736b7449"
+    },
+    {
+      "path": "COC/launchers/windows/dfir_pipeline.py",
+      "bytes": 19373,
+      "sha256": "fe537a92e02f1236b02a21f5896f3e71729bcc4abae16381fbc50408ff5ba994"
+    },
+    {
+      "path": "COC/launchers/windows/enrichment_pipeline.py",
+      "bytes": 4806,
+      "sha256": "ae73932f88ef8c2fa02ec5d0111e57ba4c452ac96c39c6c629836be53e3ba1bf"
+    },
+    {
+      "path": "COC/launchers/windows/enrichment_worker.py",
+      "bytes": 6217,
+      "sha256": "974f6bad0f0e378eb9372f516e58d24f24db14d9563ecf68129286dd3b1530e1"
+    },
+    {
+      "path": "COC/launchers/windows/field_operations.py",
+      "bytes": 9716,
+      "sha256": "b549937bb34c7e01445c89e9fb218c0715438698909e5834628971cfa07fd6c9"
+    },
+    {
+      "path": "COC/launchers/windows/investigation_pipeline.py",
+      "bytes": 31478,
+      "sha256": "857ae43bdc656df92a346479345a6a1d76afa105d61f9b0731603bed8c569c79"
+    },
+    {
+      "path": "COC/launchers/windows/investigation_worker.py",
+      "bytes": 4819,
+      "sha256": "fba74690db445e5faaf9f747daee5b6a79b1d7ba460655b78bafa1d3c11a47ec"
+    },
+    {
+      "path": "COC/launchers/windows/operations_manager.py",
+      "bytes": 18835,
+      "sha256": "de98a56b6b3ef1bc66ea430a86ea1e8c49a03d7190b12e7169a35d38847b051d"
+    },
+    {
+      "path": "COC/launchers/windows/process_check.py",
+      "bytes": 1720,
+      "sha256": "0dac6f9f805979880fd4a23079ca403c1ce1d6acbc9b91b0b401103a6c8ebd02"
+    },
+    {
+      "path": "COC/launchers/windows/response_dissect.py",
+      "bytes": 1033,
+      "sha256": "f7a7096c28462914a51c3dae0ed3c663d8ba127f1ea1dfbc15a449aa573a5355"
+    },
+    {
+      "path": "COC/launchers/windows/response_pipeline.py",
+      "bytes": 14657,
+      "sha256": "84d4b598d0a72e19bb41b22944bb699a0d165677a058d328217881f569e2c2aa"
+    },
+    {
+      "path": "COC/launchers/windows/run_offline_parser.py",
+      "bytes": 2264,
+      "sha256": "cba32a8302d7ae3471f755935396973d6b92024f6eedca427af030dc9527877f"
+    },
+    {
+      "path": "COC/launchers/windows/Start-COC-Advanced.ps1",
+      "bytes": 4309,
+      "sha256": "3209d828ccf0c479a0dd47bab3a423016d9537dda9d1ef827e2845663e9cddcd"
+    },
+    {
+      "path": "COC/launchers/windows/Start-COC-Control.ps1",
+      "bytes": 5867,
+      "sha256": "a1464c0362ac456a8bd759ad35ada65ec5e228a39c7a7d5897ec2cdb12004d29"
+    },
+    {
+      "path": "COC/launchers/windows/Start-COC-DFIR.ps1",
+      "bytes": 4930,
+      "sha256": "c2a16958e708d4af6024a1103ad040c57a128b67b8f6cecee81998099f4450a6"
+    },
+    {
+      "path": "COC/launchers/windows/Start-COC-Enrichment.ps1",
+      "bytes": 3944,
+      "sha256": "8c80c8c247acb1e6fc7246d681def61db9449e13ef6583755b29b258be95a457"
+    },
+    {
+      "path": "COC/launchers/windows/Start-COC-Field.ps1",
+      "bytes": 3883,
+      "sha256": "3e2a545eb1f4ff63ada2cc5f7e47d9899c62ea2c3dc1954db7a5f526846d5c23"
+    },
+    {
+      "path": "COC/launchers/windows/Start-COC-Investigation.ps1",
+      "bytes": 5328,
+      "sha256": "653babf6e6cd4ac858bd626e4423a15aa1e013a2d359236653364984f5bf85aa"
+    },
+    {
+      "path": "COC/launchers/windows/Start-COC-Operations.ps1",
+      "bytes": 11075,
+      "sha256": "0de4c67f5a978ebe655a8ab19ddcc53a7757a49f5cf1f82e8196c7759d40a2b5"
+    },
+    {
+      "path": "COC/launchers/windows/Start-COC-Playbook.ps1",
+      "bytes": 3049,
+      "sha256": "7e1c44c5e9596b72ce6a32c63dca45711e5c98521618ea1ea814c612a0cf0a25"
+    },
+    {
+      "path": "COC/launchers/windows/Start-COC-ProcessCheck.ps1",
+      "bytes": 3281,
+      "sha256": "fffd94a19e609a212d75298680bf812e84836ee2e4c8de4e01333bd9fa25ad72"
+    },
+    {
+      "path": "COC/launchers/windows/Start-COC-Response.ps1",
+      "bytes": 4115,
+      "sha256": "9090d42293e5af07bc304233c90ea0394b7ddc9e2f5ee8dc0670a2c004358a6c"
+    },
+    {
+      "path": "COC/launchers/windows/Start-COC-Security.ps1",
+      "bytes": 4686,
+      "sha256": "70866e618d74d06665deb991a9d057903053b5f7d956c84847f359c19256c136"
+    },
+    {
+      "path": "COC/launchers/windows/Start-COC-Supervised.ps1",
+      "bytes": 4673,
+      "sha256": "674a2aeb222157d383453fb39742a337da300503f21be1ddfec1b861c7b00f10"
+    },
+    {
+      "path": "COC/launchers/windows/Start-COC-Tools.ps1",
+      "bytes": 5127,
+      "sha256": "eb920756b6eec579beecad4aab48d18bf65f65e00d30a1f2c64c01e5f74935d7"
+    },
+    {
+      "path": "COC/manifests/field-readiness.json",
+      "bytes": 21669,
+      "sha256": "bd6a7f070356367ce5bfac290bdaad1d12ece3f12238343708ddaf9713a050fd"
+    },
+    {
+      "path": "COC/manifests/menu-tools.json",
+      "bytes": 23998,
+      "sha256": "556177b6a865e3c8bd487ad0318e5600a34996ea68066945837bb02f4d02f58c"
+    },
+    {
+      "path": "COC/manifests/tools.json",
+      "bytes": 29981,
+      "sha256": "4bb3b8b0ffb24783166aa7fac8805d086a45ce9cacfad00d94d07c938516d582"
+    },
+    {
+      "path": "COC/practice/response/access.log",
+      "bytes": 106,
+      "sha256": "f355a0c325310723d92a1b6a86dba0600e03a8234aebeba5c262424221bbd665"
+    },
+    {
+      "path": "COC/practice/response/practice-carchive.bin",
+      "bytes": 111,
+      "sha256": "de42fb4da508106bc168186595ba7163683b9846dde6f4802661427b57a937f9"
+    },
+    {
+      "path": "COC/practice/response/practice-container.tar",
+      "bytes": 20480,
+      "sha256": "d8fc1e77e6b9e729c872de751452bd4dd18259de70930fbb70d99bd02b647898"
+    },
+    {
+      "path": "COC/tests/test_advanced.py",
+      "bytes": 5007,
+      "sha256": "765d14449102f5f0221fd7499567f574f4836e76176133d05feebdda0d1704b5"
+    },
+    {
+      "path": "COC/tests/test_dfir_pipeline.py",
+      "bytes": 3034,
+      "sha256": "6501adb6296baf7aa937092a38e91945b49dcbcc6de43d96a3ced093d4633083"
+    },
+    {
+      "path": "COC/tests/test_enrichment.py",
+      "bytes": 5511,
+      "sha256": "73aeee3450c7e5473cdaaf3e5c5ef2f6ced4c3f75902135a91f23184f931b3f8"
+    },
+    {
+      "path": "COC/tests/test_field_operations.py",
+      "bytes": 4924,
+      "sha256": "8ef3fbfbba51fa998e04177e19c529d704970eb897efa52e483c8e3d28312d2f"
+    },
+    {
+      "path": "COC/tests/test_investigation_pipeline.py",
+      "bytes": 7181,
+      "sha256": "0c48307e3702741962e440acd28cd3f2a94476c796f19e00d875676eabffbf53"
+    },
+    {
+      "path": "COC/tests/test_linux_core.py",
+      "bytes": 5923,
+      "sha256": "d1830f19f86ba0550a49bcc0aa9330af57b61c2be5d173804267f0c0c3b0e016"
+    },
+    {
+      "path": "COC/tests/test_malware_expansion.py",
+      "bytes": 3432,
+      "sha256": "2f7ff63e9e01799b3fc639591d52271ac4688079f703afb8c787e339fca64bc6"
+    },
+    {
+      "path": "COC/tests/test_operations.py",
+      "bytes": 8615,
+      "sha256": "db8fa39575fbcdda66460277321379193d9d2e540dbde184916e192ecb3ca2d1"
+    },
+    {
+      "path": "COC/tests/test_response.py",
+      "bytes": 4432,
+      "sha256": "1c2c01b1fb11e218f22da0b178813592219e804e3f137ed32e21001c5f45950d"
+    },
+    {
+      "path": "COC-Technician-Menu.cmd",
+      "bytes": 268,
+      "sha256": "9b5ff86cf55f56d387c9c27c80968e532ead2dca6e35fdfa527ecb05b66236bf"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 2028,
+      "sha256": "527ac8c5671b22b158524785d74ce5bf63b2261cd3ad5cd4dba34055ceb53c10"
+    },
+    {
+      "path": "docs/images/coc-usb2-menu.png",
+      "bytes": 103560,
+      "sha256": "f6b9fd4854a26e4695ee9e11dc3e349e5975aa820eb3bc0d597550f4bdde9b57"
+    },
+    {
+      "path": "docs/images/coc-usb2-overview.png",
+      "bytes": 98520,
+      "sha256": "413d67cfd3bf5f99b3e25fe80ea4dd03fb54fc7a18b6240c21811ab5553a3052"
+    },
+    {
+      "path": "docs/images/coc-usb2-share.png",
+      "bytes": 43748,
+      "sha256": "ec3107897aea7b0eaf043cee9245b4e37c6900a765d7d10603cc594b2b65d0bc"
+    },
+    {
+      "path": "docs/images/coc-usb2-workflow.png",
+      "bytes": 115515,
+      "sha256": "1cec933d6e2029a2336d0eff91ffcdc3d345b998be221b79f3b9510543606b8c"
+    },
+    {
+      "path": "docs/publication-validation.json",
+      "bytes": 411,
+      "sha256": "3d11f80b9a1e38deca56c3b0af2333bcfcbdb7b0e7c63be60ba8997af4df03e5"
+    },
+    {
+      "path": "docs/source-edition.md",
+      "bytes": 2653,
+      "sha256": "c7e092006202983d3a8b1075a863fa83213965a911b836571ec5ff0b3c5940b7"
+    },
+    {
+      "path": "docs/validation-summary.json",
+      "bytes": 1097,
+      "sha256": "2f01f68e013007c1d953f431f618fd7c21c12eb41c75a63d90181b9a040a2342"
+    },
+    {
+      "path": "docs/validation.md",
+      "bytes": 2387,
+      "sha256": "f63471d0d04d1f037b26b4bb16831d2df8bcf4c38e26a84744e6547af6881200"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1089,
+      "sha256": "de374f9d4685947d6273a097f674b4b48a1767cc8187b5b4c882a8e15438b00d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4779,
+      "sha256": "181c1a1670fece18f1cf63d63b2d6ea11a06a5ab85e08e382a7dee2e0f6c17ae"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1331,
+      "sha256": "d80acbcd69a650e7af2c4f40c2d350eb24098d71a21cdd91e4429cb48cc087a4"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 1087,
+      "sha256": "f3bfd90deb35cd153eb39030b1bf45d3dff342f1a859a516f4b4e4431217d02b"
+    }
+  ]
+}

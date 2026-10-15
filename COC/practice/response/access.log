@@ -1,0 +1,2 @@
+#Fields: date time c-ip cs-method cs-uri-stem sc-status
+2026-10-14 12:01:02 192.0.2.1 GET /practice 200

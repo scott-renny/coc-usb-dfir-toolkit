@@ -1,0 +1,813 @@
+{
+  "schema_version": 1,
+  "tools": [
+    {
+      "name": "MFTECmd",
+      "category": "NTFS metadata",
+      "version": "2026.5.0",
+      "workflow": "Guided acquired-file parser",
+      "help": "COC/docs/tool-help/MFTECmd.txt",
+      "folder": "COC/tools/windows/Zimmerman/MFTECmd"
+    },
+    {
+      "name": "EvtxECmd",
+      "category": "Windows event logs",
+      "version": "2026.5.0",
+      "workflow": "Guided acquired-file parser",
+      "help": "COC/docs/tool-help/EvtxECmd.txt",
+      "folder": "COC/tools/windows/Zimmerman/EvtxECmd"
+    },
+    {
+      "name": "RECmd",
+      "category": "registry hives",
+      "version": "2026.5.0",
+      "workflow": "Supervised upstream workflow",
+      "help": "COC/docs/tool-help/RECmd.txt",
+      "folder": "COC/tools/windows/Zimmerman/RECmd"
+    },
+    {
+      "name": "AmcacheParser",
+      "category": "Amcache inventory",
+      "version": "2026.5.0",
+      "workflow": "Guided acquired-file parser",
+      "help": "COC/docs/tool-help/AmcacheParser.txt",
+      "folder": "COC/tools/windows/Zimmerman/AmcacheParser"
+    },
+    {
+      "name": "PECmd",
+      "category": "Prefetch",
+      "version": "2026.5.0",
+      "workflow": "Guided acquired-file parser",
+      "help": "COC/docs/tool-help/PECmd.txt",
+      "folder": "COC/tools/windows/Zimmerman/PECmd"
+    },
+    {
+      "name": "LECmd",
+      "category": "Windows shortcuts",
+      "version": "2026.5.0",
+      "workflow": "Guided acquired-file parser",
+      "help": "COC/docs/tool-help/LECmd.txt",
+      "folder": "COC/tools/windows/Zimmerman/LECmd"
+    },
+    {
+      "name": "JLECmd",
+      "category": "Jump Lists",
+      "version": "2026.5.0",
+      "workflow": "Guided acquired-file parser",
+      "help": "COC/docs/tool-help/JLECmd.txt",
+      "folder": "COC/tools/windows/Zimmerman/JLECmd"
+    },
+    {
+      "name": "SBECmd",
+      "category": "Shellbags",
+      "version": "2026.5.0",
+      "workflow": "Supervised upstream workflow",
+      "help": "COC/docs/tool-help/SBECmd.txt",
+      "folder": "COC/tools/windows/Zimmerman/SBECmd"
+    },
+    {
+      "name": "RBCmd",
+      "category": "Recycle Bin metadata",
+      "version": "2026.5.0",
+      "workflow": "Guided acquired-file parser",
+      "help": "COC/docs/tool-help/RBCmd.txt",
+      "folder": "COC/tools/windows/Zimmerman/RBCmd"
+    },
+    {
+      "name": "AppCompatCacheParser",
+      "category": "Shimcache",
+      "version": "2026.5.0",
+      "workflow": "Guided acquired-file parser",
+      "help": "COC/docs/tool-help/AppCompatCacheParser.txt",
+      "folder": "COC/tools/windows/Zimmerman/AppCompatCacheParser"
+    },
+    {
+      "name": "Chainsaw",
+      "category": "Event-log detection",
+      "version": "v2.16.5",
+      "workflow": "Supervised offline EVTX hunt",
+      "help": "COC/docs/tool-help/Chainsaw.txt",
+      "folder": "COC/tools/windows/Chainsaw"
+    },
+    {
+      "name": "Velociraptor",
+      "category": "Incident response",
+      "version": "v0.77.3",
+      "workflow": "Supervised offline collector preparation",
+      "help": "COC/docs/tool-help/Velociraptor.txt",
+      "folder": "COC/tools/windows/Velociraptor"
+    },
+    {
+      "name": "WinPmem",
+      "category": "Memory acquisition",
+      "version": "v4.0.rc1",
+      "workflow": "Lab validation required",
+      "help": "COC/docs/tool-help/WinPmem.txt",
+      "folder": "COC/tools/windows/WinPmem"
+    },
+    {
+      "name": "FullEventLogView",
+      "category": "Event-log viewer",
+      "version": "publisher-current-download",
+      "workflow": "Supervised GUI",
+      "help": "COC/docs/tool-help/FullEventLogView.txt",
+      "folder": "COC/tools/windows/FullEventLogView"
+    },
+    {
+      "name": "7-Zip",
+      "category": "Archive handling",
+      "version": "26.04",
+      "workflow": "Portable command line",
+      "help": "COC/docs/tool-help/7-Zip.txt",
+      "folder": "COC/tools/windows/7-Zip"
+    },
+    {
+      "name": "Volatility",
+      "category": "Memory analysis",
+      "version": "2.28.2",
+      "workflow": "Supervised offline image analysis",
+      "help": "COC/docs/tool-help/Volatility.txt",
+      "folder": "COC/tools/windows/Python"
+    },
+    {
+      "name": "YARA",
+      "category": "File indicators",
+      "version": "4.5.4",
+      "workflow": "Selected rules/files only",
+      "help": "COC/docs/tool-help/YARA.txt",
+      "folder": "COC/tools/windows/Python"
+    },
+    {
+      "name": "Sigma",
+      "category": "Detection-rule reference",
+      "version": "42478221b1a062411b8185732c82caa439271122",
+      "workflow": "Review/lint before use",
+      "help": "COC/docs/tool-help/Sigma.txt",
+      "folder": "COC/rules/sigma"
+    },
+    {
+      "name": "testssl",
+      "category": "TLS assessment",
+      "version": "7ad4a6e2fe1719f420afc645a4a67e3175e09095",
+      "workflow": "Authorized Linux endpoint",
+      "help": "COC/docs/tool-help/testssl.txt",
+      "folder": "COC/tools/linux/testssl"
+    },
+    {
+      "name": "Lynis",
+      "category": "Linux host audit",
+      "version": "9319416fa0726369ab0a48f686155a90363f3f9c",
+      "workflow": "Authorized Linux host",
+      "help": "COC/docs/tool-help/Lynis.txt",
+      "folder": "COC/tools/linux/Lynis"
+    },
+    {
+      "name": "FLOSS",
+      "category": "Obfuscated strings / emulated analysis",
+      "version": "v3.1.1",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/FLOSS.txt",
+      "folder": "COC/tools/windows/FLOSS"
+    },
+    {
+      "name": "capa",
+      "category": "Reference archive; Windows startup policy blocked",
+      "version": "v9.4.0",
+      "workflow": "Reference only",
+      "help": "COC/docs/tool-help/capa.txt",
+      "folder": "COC/tools/reference/capa"
+    },
+    {
+      "name": "CyberChef",
+      "category": "Offline decoding and data analysis",
+      "version": "v11.5.0",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/CyberChef.txt",
+      "folder": "COC/tools/offline/CyberChef"
+    },
+    {
+      "name": "DBBrowser",
+      "category": "Windows SQLite viewer",
+      "version": "v3.13.1",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/DBBrowser.txt",
+      "folder": "COC/tools/windows/DBBrowser"
+    },
+    {
+      "name": "Hindsight",
+      "category": "Browser artifacts",
+      "version": "v2026.06",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/Hindsight.txt",
+      "folder": "COC/tools/windows/Hindsight"
+    },
+    {
+      "name": "SrumECmd",
+      "category": "Windows application/network usage",
+      "version": "2026.5.0",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/SrumECmd.txt",
+      "folder": "COC/tools/windows/Zimmerman/SrumECmd"
+    },
+    {
+      "name": "SumECmd",
+      "category": "Windows server access records",
+      "version": "2026.5.0",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/SumECmd.txt",
+      "folder": "COC/tools/windows/Zimmerman/SumECmd"
+    },
+    {
+      "name": "WxTCmd",
+      "category": "Windows Timeline database",
+      "version": "2026.5.0",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/WxTCmd.txt",
+      "folder": "COC/tools/windows/Zimmerman/WxTCmd"
+    },
+    {
+      "name": "SQLECmd",
+      "category": "Mapped SQLite artifact analysis",
+      "version": "2026.5.0",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/SQLECmd.txt",
+      "folder": "COC/tools/windows/Zimmerman/SQLECmd"
+    },
+    {
+      "name": "RecentFileCacheParser",
+      "category": "RecentFileCache artifacts",
+      "version": "2026.5.0",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/RecentFileCacheParser.txt",
+      "folder": "COC/tools/windows/Zimmerman/RecentFileCacheParser"
+    },
+    {
+      "name": "DFIR-ORC",
+      "category": "Supervised acquisition candidate",
+      "version": "v10.4.0",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/DFIR-ORC.txt",
+      "folder": "COC/tools/windows/DFIR-ORC"
+    },
+    {
+      "name": "TimelineExplorer",
+      "category": "Timeline review GUI",
+      "version": "2026.5.0",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/TimelineExplorer.txt",
+      "folder": "COC/tools/windows/Zimmerman/TimelineExplorer"
+    },
+    {
+      "name": "RegistryExplorer",
+      "category": "Registry review GUI",
+      "version": "2026.5.0",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/RegistryExplorer.txt",
+      "folder": "COC/tools/windows/Zimmerman/RegistryExplorer"
+    },
+    {
+      "name": "ALEAPP",
+      "category": "Acquired Android artifacts",
+      "version": "v2026.4.3",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/ALEAPP.txt",
+      "folder": "COC/tools/mobile/ALEAPP"
+    },
+    {
+      "name": "MFTExplorer",
+      "category": "NTFS metadata review GUI",
+      "version": "2026.5.0",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/MFTExplorer.txt",
+      "folder": "COC/tools/windows/Zimmerman/MFTExplorer"
+    },
+    {
+      "name": "ShellBagsExplorer",
+      "category": "Shellbags review GUI",
+      "version": "2026.5.0",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/ShellBagsExplorer.txt",
+      "folder": "COC/tools/windows/Zimmerman/ShellBagsExplorer"
+    },
+    {
+      "name": "DidierStevens",
+      "category": "Selected PDF/OLE/email analysis scripts",
+      "version": "7d625d0b05c4638b981a2a2cc9a8481d7b73e56d",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/DidierStevens.txt",
+      "folder": "COC/tools/offline/DidierStevens"
+    },
+    {
+      "name": "iLEAPP",
+      "category": "Acquired iOS artifacts",
+      "version": "v2026.4.4",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/iLEAPP.txt",
+      "folder": "COC/tools/mobile/iLEAPP"
+    },
+    {
+      "name": "JumpListExplorer",
+      "category": "Jump List review GUI",
+      "version": "2026.5.0",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/JumpListExplorer.txt",
+      "folder": "COC/tools/windows/Zimmerman/JumpListExplorer"
+    },
+    {
+      "name": "EZViewer",
+      "category": "Evidence document/hex viewer",
+      "version": "2026.5.0",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/EZViewer.txt",
+      "folder": "COC/tools/windows/Zimmerman/EZViewer"
+    },
+    {
+      "name": "Hayabusa",
+      "category": "Event-log timeline and detections",
+      "version": "v4.2.0",
+      "workflow": "DFIR automation / supervised acquired-evidence analysis",
+      "help": "COC/docs/tool-help/Hayabusa.txt",
+      "folder": "COC/tools/windows/Hayabusa"
+    },
+    {
+      "name": "Dissect",
+      "category": "Disk/VM image artifact queries",
+      "version": "3.25.1 component set",
+      "workflow": "Supervised CLI; oleid is automated in file triage",
+      "help": "COC/docs/tool-help/target_query.py.txt",
+      "folder": "COC/tools/windows/Python"
+    },
+    {
+      "name": "Acquire",
+      "category": "Supervised artifact acquisition",
+      "version": "3.22",
+      "workflow": "Supervised CLI; oleid is automated in file triage",
+      "help": "COC/docs/tool-help/acquire_cli.py.txt",
+      "folder": "COC/tools/windows/Python"
+    },
+    {
+      "name": "oletools",
+      "category": "Office document/macro inspection",
+      "version": "0.60.2",
+      "workflow": "Supervised CLI; oleid is automated in file triage",
+      "help": "COC/docs/tool-help/oletools.oleid.txt",
+      "folder": "COC/tools/windows/Python"
+    },
+    {
+      "name": "GoReSym",
+      "category": "Go symbol recovery",
+      "version": "v3.4.1",
+      "workflow": "staged-candidate",
+      "help": "COC/docs/tool-help/GoReSym.txt",
+      "folder": "COC/tools/windows/GoReSym"
+    },
+    {
+      "name": "PE-bear",
+      "category": "PE header and structure examination",
+      "version": "v0.7.2",
+      "workflow": "staged-candidate",
+      "help": "COC/docs/tool-help/PE-bear.txt",
+      "folder": "COC/tools/windows/PE-bear"
+    },
+    {
+      "name": "PE-sieve",
+      "category": "One selected live PID; report-only; no dumping",
+      "version": "v0.4.1.1",
+      "workflow": "staged-candidate",
+      "help": "COC/docs/tool-help/PE-sieve.txt",
+      "folder": "COC/tools/windows/PE-sieve"
+    },
+    {
+      "name": "HollowsHunter",
+      "category": "One selected live PID; report-only; no continuous scan",
+      "version": "v0.4.1.1",
+      "workflow": "staged-candidate",
+      "help": "COC/docs/tool-help/HollowsHunter.txt",
+      "folder": "COC/tools/windows/HollowsHunter"
+    },
+    {
+      "name": "DetectItEasy",
+      "category": "File/compiler/packer identification",
+      "version": "3.21",
+      "workflow": "staged-candidate",
+      "help": "COC/docs/tool-help/DetectItEasy.txt",
+      "folder": "COC/tools/windows/DetectItEasy"
+    },
+    {
+      "name": "YARA-X",
+      "category": "Additional rule engine; validate compatibility separately",
+      "version": "v1.21.0",
+      "workflow": "staged-candidate",
+      "help": "COC/docs/tool-help/YARA-X.txt",
+      "folder": "COC/tools/windows/YARA-X"
+    },
+    {
+      "name": "x64dbg",
+      "category": "Dynamic debugging inside isolated lab only",
+      "version": "2026.05.27",
+      "workflow": "staged-candidate",
+      "help": "COC/docs/tool-help/x64dbg.txt",
+      "folder": "COC/tools/windows/x64dbg"
+    },
+    {
+      "name": "dnSpyEx",
+      "category": ".NET examination; debugging only in isolated lab",
+      "version": "v6.6.0",
+      "workflow": "staged-candidate",
+      "help": "COC/docs/tool-help/dnSpyEx.txt",
+      "folder": "COC/tools/windows/dnSpyEx"
+    },
+    {
+      "name": "bstrings",
+      "category": "Strings and pattern searches with offsets",
+      "version": "2026.5.0",
+      "workflow": "staged-candidate",
+      "help": "COC/docs/tool-help/bstrings.txt",
+      "folder": "COC/tools/windows/Zimmerman/bstrings"
+    },
+    {
+      "name": "ImHex",
+      "category": "Structured binary examination",
+      "version": "v1.38.1",
+      "workflow": "staged-candidate",
+      "help": "COC/docs/tool-help/ImHex.txt",
+      "folder": "COC/tools/windows/ImHex"
+    },
+    {
+      "name": "Java",
+      "category": "Private portable runtime for Ghidra; no system installation",
+      "version": "25.0.4+101.0.LTS",
+      "workflow": "staged-candidate",
+      "help": "COC/docs/tool-help/Java.txt",
+      "folder": "COC/tools/windows/Java"
+    },
+    {
+      "name": "NetworkMiner",
+      "category": "Free GUI capture-file reconstruction; CLI automation not assumed",
+      "version": "3.2",
+      "workflow": "staged-candidate",
+      "help": "COC/docs/tool-help/NetworkMiner.txt",
+      "folder": "COC/tools/windows/NetworkMiner"
+    },
+    {
+      "name": "Ghidra",
+      "category": "Native executable decompilation and static examination",
+      "version": "Ghidra_12.1.4_build",
+      "workflow": "staged-candidate",
+      "help": "COC/docs/tool-help/Ghidra.txt",
+      "folder": "COC/apps/gh"
+    },
+    {
+      "name": "Wireshark",
+      "category": "Portable Windows offline PCAP analysis; live capture requires host driver",
+      "version": "4.6.9",
+      "workflow": "staged-candidate",
+      "help": "COC/docs/tool-help/Wireshark.txt",
+      "folder": "COC/installers/Wireshark"
+    },
+    {
+      "name": "Autopsy",
+      "category": "Signed/pinned workstation installer; not a portable GUI",
+      "version": "autopsy-4.23.1",
+      "workflow": "transport-package-not-host-installed",
+      "help": "COC/docs/tool-help/Autopsy.txt",
+      "folder": "COC/installers/Autopsy"
+    },
+    {
+      "name": "ExifTool",
+      "category": "Reference-only Windows archive; startup failed with DLL relocation error",
+      "version": "13.59",
+      "workflow": "reference-only-startup-failed",
+      "help": "COC/docs/tool-help/ExifTool.txt",
+      "folder": "COC/tools/reference/ExifTool"
+    },
+    {
+      "name": "ClamAV",
+      "category": "Portable secondary scanner; database availability and freshness required; no remediation",
+      "version": "clamav-1.5.4",
+      "workflow": "reference-only-updater-startup-failed",
+      "help": "COC/docs/tool-help/ClamAV.txt",
+      "folder": "COC/tools/reference/ClamAV"
+    },
+    {
+      "name": "REMnux",
+      "category": "Publisher-checksum verified transport appliance; VM import and lab validation pending",
+      "version": "202610-noble-amd64",
+      "workflow": "transport-package-not-host-installed",
+      "help": "COC/docs/tool-help/REMnux.txt",
+      "folder": "COC/lab/REMnux"
+    },
+    {
+      "name": "Takajo",
+      "version": "2.16.1",
+      "category": "Specialist offline investigation",
+      "workflow": "See specialist menu and readiness; lab packages are transport only",
+      "help": "COC/docs/SPECIALIST-INVESTIGATIONS.md",
+      "folder": "COC/tools/windows/Takajo"
+    },
+    {
+      "name": "SQLite Dissect",
+      "version": "1.0.0",
+      "category": "Specialist offline investigation",
+      "workflow": "See specialist menu and readiness; lab packages are transport only",
+      "help": "COC/docs/SPECIALIST-INVESTIGATIONS.md",
+      "folder": "COC/tools/windows/InvestigationPackages"
+    },
+    {
+      "name": "libpff",
+      "version": "20260926",
+      "category": "Specialist offline investigation",
+      "workflow": "See specialist menu and readiness; lab packages are transport only",
+      "help": "COC/docs/SPECIALIST-INVESTIGATIONS.md",
+      "folder": "COC/tools/windows/InvestigationPackages"
+    },
+    {
+      "name": "RDP bitmap tools",
+      "version": "5a4cad32be78b3b874aeec910cb478e04ba3501e",
+      "category": "Specialist offline investigation",
+      "workflow": "See specialist menu and readiness; lab packages are transport only",
+      "help": "COC/docs/SPECIALIST-INVESTIGATIONS.md",
+      "folder": "COC/tools/offline/bmc-tools"
+    },
+    {
+      "name": "Windows symbols",
+      "version": "11ad856cd9fb1dea9a007f6c56fb33b8c7e6e3e1",
+      "category": "Specialist offline investigation",
+      "workflow": "See specialist menu and readiness; lab packages are transport only",
+      "help": "COC/docs/SPECIALIST-INVESTIGATIONS.md",
+      "folder": "COC/symbols/windows"
+    },
+    {
+      "name": "MemProcFS",
+      "version": "5.19",
+      "category": "Specialist offline investigation",
+      "workflow": "See specialist menu and readiness; lab packages are transport only",
+      "help": "COC/docs/SPECIALIST-INVESTIGATIONS.md",
+      "folder": "COC/lab/MemProcFS"
+    },
+    {
+      "name": "SIFT",
+      "version": "2026-04-22",
+      "category": "Specialist offline investigation",
+      "workflow": "See specialist menu and readiness; lab packages are transport only",
+      "help": "COC/docs/SPECIALIST-INVESTIGATIONS.md",
+      "folder": "COC/lab/SIFT"
+    },
+    {
+      "name": "Unfurl",
+      "version": "20261007",
+      "category": "Offline evidence enrichment",
+      "workflow": "Automated playbooks > Specialist field review; Unix tools transport only",
+      "folder": "COC/tools/windows/EnrichmentPackages",
+      "help": "COC/docs/ENRICHMENT-TOOLS.md"
+    },
+    {
+      "name": "extract-msg",
+      "version": "0.56.1",
+      "category": "Offline evidence enrichment",
+      "workflow": "Automated playbooks > Specialist field review; Unix tools transport only",
+      "folder": "COC/tools/windows/EnrichmentPackages",
+      "help": "COC/docs/ENRICHMENT-TOOLS.md"
+    },
+    {
+      "name": "Binary Refinery",
+      "version": "0.3.36",
+      "category": "Offline evidence enrichment",
+      "workflow": "Automated playbooks > Specialist field review; Unix tools transport only",
+      "folder": "COC/tools/windows/EnrichmentPackages",
+      "help": "COC/docs/ENRICHMENT-TOOLS.md"
+    },
+    {
+      "name": "UAC",
+      "version": "3.4.0",
+      "category": "Offline evidence enrichment",
+      "workflow": "Automated playbooks > Specialist field review; Unix tools transport only",
+      "folder": "COC/tools/unix/UAC",
+      "help": "COC/docs/ENRICHMENT-TOOLS.md"
+    },
+    {
+      "name": "AVML",
+      "version": "0.21.0",
+      "category": "Offline evidence enrichment",
+      "workflow": "Automated playbooks > Specialist field review; Unix tools transport only",
+      "folder": "COC/tools/unix/AVML",
+      "help": "COC/docs/ENRICHMENT-TOOLS.md"
+    },
+    {
+      "name": "JADX",
+      "version": "1.5.6",
+      "category": "Advanced acquired evidence",
+      "folder": "COC/apps/jadx",
+      "workflow": "Automated playbooks > Advanced APK / images / logs / signatures",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md"
+    },
+    {
+      "name": "Apktool",
+      "version": "3.0.3",
+      "category": "Advanced acquired evidence",
+      "folder": "COC/apps/apktool",
+      "workflow": "Automated playbooks > Advanced APK / images / logs / signatures",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md"
+    },
+    {
+      "name": "Cutter",
+      "version": "2.5.0",
+      "category": "Advanced acquired evidence",
+      "folder": "COC/apps/cutter",
+      "workflow": "Automated playbooks > Advanced APK / images / logs / signatures",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md"
+    },
+    {
+      "name": "TestDisk",
+      "version": "7.2",
+      "category": "Advanced acquired evidence",
+      "folder": "COC/tools/windows/PhotoRec",
+      "workflow": "Automated playbooks > Advanced APK / images / logs / signatures",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md"
+    },
+    {
+      "name": "PhotoRec",
+      "version": "7.2",
+      "category": "Advanced acquired evidence",
+      "folder": "COC/tools/windows/PhotoRec",
+      "workflow": "Automated playbooks > Advanced APK / images / logs / signatures",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md"
+    },
+    {
+      "name": "Apple UnifiedLogs",
+      "version": "0.7.0",
+      "category": "Advanced acquired evidence",
+      "folder": "COC/tools/windows/AppleLogs",
+      "workflow": "Automated playbooks > Advanced APK / images / logs / signatures",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md"
+    },
+    {
+      "name": "YARA Forge full",
+      "version": "20261011",
+      "category": "Advanced acquired evidence",
+      "folder": "COC/rules/YARA-Forge",
+      "workflow": "Automated playbooks > Advanced APK / images / logs / signatures",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md"
+    },
+    {
+      "name": "MWCP",
+      "version": "3.16.1",
+      "category": "Advanced acquired evidence",
+      "folder": "COC/apps/pyx",
+      "workflow": "Automated playbooks > Advanced APK / images / logs / signatures",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md"
+    },
+    {
+      "name": "Malduck",
+      "version": "4.4.1",
+      "category": "Advanced acquired evidence",
+      "folder": "COC/apps/pyx",
+      "workflow": "Automated playbooks > Advanced APK / images / logs / signatures",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md"
+    },
+    {
+      "name": "TLSH Java",
+      "version": "ebdec8fde93a4ac359437f4f3796c78d3ae433bf",
+      "category": "Advanced acquired evidence",
+      "folder": "COC/apps/tlsh",
+      "workflow": "Automated playbooks > Advanced APK / images / logs / signatures",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md"
+    },
+    {
+      "name": "Thumbcache Viewer",
+      "version": "GUI 1.0.4.0 / CMD 1.0.2.1",
+      "category": "Advanced acquired evidence",
+      "folder": "COC/tools/windows/Thumbcache",
+      "workflow": "Automated playbooks > Advanced APK / images / logs / signatures",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md"
+    },
+    {
+      "name": "MITRE ATTACK",
+      "version": "c2494b29dd268c46a5d0ea0990553e4327cd2253",
+      "category": "Advanced acquired evidence",
+      "folder": "COC/reference/ATTACK",
+      "workflow": "Automated playbooks > Advanced APK / images / logs / signatures",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md"
+    },
+    {
+      "name": "LOLBAS",
+      "version": "2056cb7662509dc998fc6ce79636aec4e6c0397f",
+      "category": "Advanced acquired evidence",
+      "folder": "COC/reference/LOLBAS",
+      "workflow": "Automated playbooks > Advanced APK / images / logs / signatures",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md"
+    },
+    {
+      "name": "osqueryi",
+      "version": "5.23.1",
+      "category": "Response and reconstruction",
+      "folder": "COC/tools/windows/osquery",
+      "workflow": "Automated playbooks > Response / reconstruction",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md"
+    },
+    {
+      "name": "PyInstaller Extractor NG",
+      "version": "2026.07.03",
+      "category": "Response and reconstruction",
+      "folder": "COC/tools/windows/PyInstallerExtractor",
+      "workflow": "Automated playbooks > Response / reconstruction",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md"
+    },
+    {
+      "name": "COC bounded CArchive extractor",
+      "version": "1",
+      "category": "Response and reconstruction",
+      "folder": "COC/launchers/windows/response_pipeline.py",
+      "workflow": "Automated playbooks > Response / reconstruction",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md"
+    },
+    {
+      "name": "COC server incident runbook",
+      "version": "1",
+      "category": "Response and reconstruction",
+      "folder": "COC/launchers/windows/response_pipeline.py",
+      "workflow": "Automated playbooks > Response / reconstruction",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md"
+    },
+    {
+      "name": "COC case correlation",
+      "version": "1",
+      "category": "Response and reconstruction",
+      "folder": "COC/launchers/windows/response_pipeline.py",
+      "workflow": "Automated playbooks > Response / reconstruction",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md"
+    },
+    {
+      "name": "Dissect container review",
+      "version": "existing-runtime",
+      "category": "Response and reconstruction",
+      "folder": "COC/launchers/windows/response_dissect.py",
+      "workflow": "Automated playbooks > Response / reconstruction",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md"
+    },
+    {
+      "name": "Zeek",
+      "version": "9.0.0-image",
+      "category": "Response and reconstruction",
+      "folder": "COC/lab/Offline-Analysis",
+      "workflow": "Automated playbooks > Response / reconstruction",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md"
+    },
+    {
+      "name": "Suricata",
+      "version": "community-image-pinned",
+      "category": "Response and reconstruction",
+      "folder": "COC/lab/Offline-Analysis",
+      "workflow": "Automated playbooks > Response / reconstruction",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md"
+    },
+    {
+      "name": "Plaso",
+      "version": "project-image-pinned",
+      "category": "Response and reconstruction",
+      "folder": "COC/lab/Offline-Analysis",
+      "workflow": "Automated playbooks > Response / reconstruction",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md"
+    },
+    {
+      "name": "COC guided incident selector",
+      "version": "1",
+      "category": "Response and reconstruction",
+      "folder": "COC/launchers/windows/operations_manager.py",
+      "workflow": "Automated playbooks > Field operations manager",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md"
+    },
+    {
+      "name": "COC harmless practice check",
+      "version": "1",
+      "category": "Response and reconstruction",
+      "folder": "COC/launchers/windows/operations_manager.py",
+      "workflow": "Automated playbooks > Field operations manager",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md"
+    },
+    {
+      "name": "COC evidence handoff packet",
+      "version": "1",
+      "category": "Response and reconstruction",
+      "folder": "COC/launchers/windows/operations_manager.py",
+      "workflow": "Automated playbooks > Field operations manager",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md"
+    },
+    {
+      "name": "COC offline freshness dashboard",
+      "version": "1",
+      "category": "Response and reconstruction",
+      "folder": "COC/launchers/windows/operations_manager.py",
+      "workflow": "Automated playbooks > Field operations manager",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md"
+    },
+    {
+      "name": "COC generated log manager",
+      "version": "1",
+      "category": "Response and reconstruction",
+      "folder": "COC/launchers/windows/operations_manager.py",
+      "workflow": "Automated playbooks > Field operations manager",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "project": "COC USB #2 \u2014 DFIR and Incident Response",
+  "release": "0.10.1-response-field-operations",
+  "project_type": "Personal lab engineering",
+  "installation": "Owner-run deployment completed; changed files read-back verified",
+  "latest_changed_files": 35,
+  "latest_full_release_rehashed": false,
+  "free_GiB_after_update": 18.58,
+  "verified_utc": "2026-10-15T00:15:12.0282375Z",
+  "installed_manifest_sha256": "aafebeed8cdbd27b4db0b0a65309f0b92b4067bccb457a30e2c948644befbb61",
+  "local_python_tests": 128,
+  "operations_case_flows": 7,
+  "controlled_guided_decision_flows": 3,
+  "guided_step_launch_boundary": "Mocked; real case core/progress/artifact checks",
+  "images_integrity_checked": true,
+  "lab_runtime_accepted": false,
+  "full_live_query_collection_accepted": false,
+  "owner_menu_acceptance": "Prior centered design accepted; new operations menu audit not recorded",
+  "boot_testing": "Excluded by owner",
+  "source_edition": "Custom source, documentation and public evidence only; vendor tools/media and operative release manifest omitted"
+}

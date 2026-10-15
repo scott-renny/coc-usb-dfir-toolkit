@@ -1,0 +1,634 @@
+{
+  "schema_version": 1,
+  "tools": [
+    {
+      "name": "Ghidra",
+      "group": "Malware",
+      "action": "gui",
+      "status": "staged-candidate",
+      "lab": false,
+      "note": "Native executable decompilation and static examination",
+      "executable": "COC/apps/gh/ghidraRun.bat"
+    },
+    {
+      "name": "DetectItEasy",
+      "group": "Malware",
+      "action": "gui",
+      "status": "staged-candidate",
+      "lab": false,
+      "note": "File/compiler/packer identification",
+      "executable": "COC/tools/windows/DetectItEasy/die/die.exe"
+    },
+    {
+      "name": "PE-bear",
+      "group": "Malware",
+      "action": "gui",
+      "status": "staged-candidate",
+      "lab": false,
+      "note": "PE header and structure examination",
+      "executable": "COC/tools/windows/PE-bear/PE-bear.exe"
+    },
+    {
+      "name": "dnSpyEx",
+      "group": "Malware",
+      "action": "gui",
+      "status": "staged-candidate",
+      "lab": true,
+      "note": ".NET examination; debugging only in isolated lab",
+      "executable": "COC/tools/windows/dnSpyEx/dnSpy.exe"
+    },
+    {
+      "name": "ImHex",
+      "group": "Malware",
+      "action": "gui",
+      "status": "staged-candidate",
+      "lab": false,
+      "note": "Structured binary examination",
+      "executable": "COC/tools/windows/ImHex/imhex-gui.exe"
+    },
+    {
+      "name": "x64dbg",
+      "group": "Malware",
+      "action": "gui",
+      "status": "staged-candidate",
+      "lab": true,
+      "note": "Dynamic debugging inside isolated lab only",
+      "executable": "COC/tools/windows/x64dbg/release/x64/x64dbg.exe"
+    },
+    {
+      "name": "FLOSS",
+      "group": "Malware",
+      "action": "profile",
+      "status": "staged-candidate",
+      "lab": false,
+      "note": "Launch logged executable assessment: Detect It Easy, bstrings and FLOSS on acquired PE working copies.",
+      "profile": "ExecutableAssessment"
+    },
+    {
+      "name": "bstrings",
+      "group": "Malware",
+      "action": "profile",
+      "status": "staged-candidate",
+      "lab": false,
+      "note": "Launch logged executable assessment: Detect It Easy, bstrings and FLOSS on acquired PE working copies.",
+      "profile": "ExecutableAssessment"
+    },
+    {
+      "name": "GoReSym",
+      "group": "Malware",
+      "action": "profile",
+      "status": "staged-candidate",
+      "lab": false,
+      "note": "Recover symbols from acquired Windows Go executables. Non-Go inputs may be unsupported; no sample execution.",
+      "profile": "GoSymbols"
+    },
+    {
+      "name": "YARA-X",
+      "group": "Malware",
+      "action": "help",
+      "status": "staged-candidate",
+      "lab": false,
+      "note": "Open bundled CLI help; use selected reviewed rules on acquired working copies. Not an automated whole-host scan.",
+      "help": "COC/docs/tool-help/YARA-X.txt"
+    },
+    {
+      "name": "ClamAV",
+      "group": "Malware",
+      "action": "reference",
+      "status": "reference-only-updater-startup-failed",
+      "lab": false,
+      "note": "Official updater exited 0xC0EF0002 before producing output; no signature database acquired. Archive retained; no alternate execution workaround."
+    },
+    {
+      "name": "capa",
+      "group": "Malware",
+      "action": "reference",
+      "status": "reference-only-policy-blocked",
+      "lab": false,
+      "note": "Windows Application Control blocked startup; no bypass or automatic execution."
+    },
+    {
+      "name": "ExifTool",
+      "group": "Malware",
+      "action": "reference",
+      "status": "reference-only-startup-failed",
+      "lab": false,
+      "note": "Reference-only Windows archive; startup failed with DLL relocation error"
+    },
+    {
+      "name": "Wireshark",
+      "group": "Network",
+      "action": "gui",
+      "status": "staged-candidate",
+      "lab": false,
+      "note": "Portable Windows offline PCAP analysis; live capture requires host driver",
+      "executable": "COC/tools/windows/Wireshark/Wireshark.exe"
+    },
+    {
+      "name": "NetworkMiner",
+      "group": "Network",
+      "action": "gui",
+      "status": "staged-candidate",
+      "lab": false,
+      "note": "Free GUI capture-file reconstruction; CLI automation not assumed",
+      "executable": "COC/tools/windows/NetworkMiner/NetworkMiner_3-2/NetworkMiner.exe"
+    },
+    {
+      "name": "PE-sieve",
+      "group": "Acquisition",
+      "action": "process",
+      "status": "staged-candidate",
+      "lab": false,
+      "note": "One selected live PID; report-only; no dumping"
+    },
+    {
+      "name": "HollowsHunter",
+      "group": "Acquisition",
+      "action": "process",
+      "status": "staged-candidate",
+      "lab": false,
+      "note": "One selected live PID; report-only; no continuous scan"
+    },
+    {
+      "name": "Volatility",
+      "group": "Acquisition",
+      "action": "reference",
+      "status": "supervised-validation-pending",
+      "lab": false,
+      "note": "Consult existing tool help; memory/raw-media collection requires separate lab acceptance. No automatic acquisition."
+    },
+    {
+      "name": "WinPmem",
+      "group": "Acquisition",
+      "action": "reference",
+      "status": "supervised-validation-pending",
+      "lab": false,
+      "note": "Consult existing tool help; memory/raw-media collection requires separate lab acceptance. No automatic acquisition."
+    },
+    {
+      "name": "Acquire",
+      "group": "Acquisition",
+      "action": "reference",
+      "status": "supervised-validation-pending",
+      "lab": false,
+      "note": "Consult existing tool help; memory/raw-media collection requires separate lab acceptance. No automatic acquisition."
+    },
+    {
+      "name": "DFIR-ORC",
+      "group": "Acquisition",
+      "action": "reference",
+      "status": "supervised-validation-pending",
+      "lab": false,
+      "note": "Consult existing tool help; memory/raw-media collection requires separate lab acceptance. No automatic acquisition."
+    },
+    {
+      "name": "Velociraptor",
+      "group": "Acquisition",
+      "action": "reference",
+      "status": "supervised-validation-pending",
+      "lab": false,
+      "note": "Consult existing tool help; memory/raw-media collection requires separate lab acceptance. No automatic acquisition."
+    },
+    {
+      "name": "REMnux",
+      "group": "Lab",
+      "action": "reference",
+      "status": "transport-package-not-host-installed",
+      "lab": false,
+      "note": "Publisher-checksum verified transport appliance; VM import and lab validation pending"
+    },
+    {
+      "name": "Autopsy",
+      "group": "Lab",
+      "action": "reference",
+      "status": "transport-package-not-host-installed",
+      "lab": false,
+      "note": "Signed/pinned workstation installer; not a portable GUI"
+    },
+    {
+      "name": "SIFT",
+      "group": "Lab",
+      "action": "reference",
+      "status": "verified-appliance-transport-only",
+      "lab": false,
+      "note": "Publisher OVA now included and SHA256 verified. Separate workstation VM import pending."
+    },
+    {
+      "name": "FTK Imager",
+      "group": "Lab",
+      "action": "reference",
+      "status": "installer-transport-only",
+      "lab": false,
+      "note": "Official signed installer package now included; consult field guide. No host installation or acquisition performed."
+    },
+    {
+      "name": "FLARE-VM",
+      "group": "Lab",
+      "action": "reference",
+      "status": "lab-reference",
+      "lab": false,
+      "note": "Separate lab environment/reference workflow; not installed as a standalone Windows USB application."
+    },
+    {
+      "name": "CAPE",
+      "group": "Lab",
+      "action": "reference",
+      "status": "lab-reference",
+      "lab": false,
+      "note": "Separate lab environment/reference workflow; not installed as a standalone Windows USB application."
+    },
+    {
+      "name": "Binwalk",
+      "group": "Lab",
+      "action": "reference",
+      "status": "lab-reference",
+      "lab": false,
+      "note": "Separate lab environment/reference workflow; not installed as a standalone Windows USB application."
+    },
+    {
+      "name": "Speakeasy",
+      "group": "Lab",
+      "action": "reference",
+      "status": "lab-reference",
+      "lab": false,
+      "note": "Separate lab environment/reference workflow; not installed as a standalone Windows USB application."
+    },
+    {
+      "name": "bulk_extractor",
+      "group": "Acquisition",
+      "action": "profile",
+      "profile": "BulkFeatures",
+      "status": "harmless-input-passed",
+      "lab": false,
+      "note": "Bounded email/URL extraction from acquired working copies; no raw host devices."
+    },
+    {
+      "name": "RegRipper",
+      "group": "Acquisition",
+      "action": "reference",
+      "status": "reference-only-startup-failed",
+      "lab": false,
+      "note": "Windows DLL relocation error. Use existing RECmd/RegistryExplorer; see field guide."
+    },
+    {
+      "name": "hashdeep",
+      "group": "Acquisition",
+      "action": "reference",
+      "status": "reference-only-startup-failed",
+      "lab": false,
+      "note": "Windows DLL relocation error. Use logged case-transfer workflow; see field guide."
+    },
+    {
+      "name": "FakeNet-NG",
+      "group": "Lab",
+      "action": "help",
+      "help": "COC/docs/FIELD-OPERATIONS.md",
+      "status": "lab-transport-only",
+      "lab": true,
+      "note": "Package for separate isolated lab; this entry opens guidance only, never starts the tool."
+    },
+    {
+      "name": "Takajo",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/SPECIALIST-INVESTIGATIONS.md",
+      "status": "synthetic-computer-task-views-passed",
+      "lab": false,
+      "note": "Fixed offline commands only. Native EVTX conversion and real Sysmon process-tree acceptance pending. Use Automated playbooks > Specialist offline investigations."
+    },
+    {
+      "name": "SQLite Dissect",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/SPECIALIST-INVESTIGATIONS.md",
+      "status": "synthetic-database-WAL-carving-run-passed",
+      "lab": false,
+      "note": "Basic and WAL row extraction passed. Deleted-record recovery not established. Fresh WAL base with zero encoding is an explicit upstream limitation. Use Automated playbooks > Specialist offline investigations."
+    },
+    {
+      "name": "libpff",
+      "group": "Malware",
+      "action": "help",
+      "help": "COC/docs/SPECIALIST-INVESTIGATIONS.md",
+      "status": "imports-and-invalid-input-refusal-passed",
+      "lab": false,
+      "note": "PST/OST workflow implemented; known-valid mailbox and attachment acceptance pending. Use Automated playbooks > Specialist offline investigations."
+    },
+    {
+      "name": "RDP bitmap tools",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/SPECIALIST-INVESTIGATIONS.md",
+      "status": "synthetic-RDP8-tile-passed",
+      "lab": false,
+      "note": "One expected bitmap extracted. Real-session forensic interpretation remains unvalidated. Use Automated playbooks > Specialist offline investigations."
+    },
+    {
+      "name": "Windows symbols",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/SPECIALIST-INVESTIGATIONS.md",
+      "status": "298-symbol-schemas-validated",
+      "lab": false,
+      "note": "Pinned JPCERT/CC ntkrnlmp/tcpip collection. Exact image-to-symbol match not tested. Use Automated playbooks > Specialist offline investigations."
+    },
+    {
+      "name": "MemProcFS",
+      "group": "Lab",
+      "action": "help",
+      "help": "COC/docs/SPECIALIST-INVESTIGATIONS.md",
+      "status": "workstation-transport-only",
+      "lab": true,
+      "note": "Official 5.19 ZIP; not executed, mounted or installed. Use Automated playbooks > Specialist offline investigations."
+    },
+    {
+      "name": "Unfurl",
+      "group": "Network",
+      "action": "help",
+      "help": "COC/docs/ENRICHMENT-TOOLS.md",
+      "status": "offline-synthetic-URL-interpretation-passed",
+      "lab": false,
+      "note": "Use Automated playbooks > Specialist field review. Unix collectors are transport only; consult guide before authorized use."
+    },
+    {
+      "name": "extract-msg",
+      "group": "Malware",
+      "action": "help",
+      "help": "COC/docs/ENRICHMENT-TOOLS.md",
+      "status": "synthetic-MSG-subject-body-passed",
+      "lab": false,
+      "note": "Use Automated playbooks > Specialist field review. Unix collectors are transport only; consult guide before authorized use."
+    },
+    {
+      "name": "Binary Refinery",
+      "group": "Malware",
+      "action": "help",
+      "help": "COC/docs/ENRICHMENT-TOOLS.md",
+      "status": "fixed-base64-hex-only-passed",
+      "lab": false,
+      "note": "Use Automated playbooks > Specialist field review. Unix collectors are transport only; consult guide before authorized use."
+    },
+    {
+      "name": "UAC",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/ENRICHMENT-TOOLS.md",
+      "status": "verified-unix-transport-only",
+      "lab": false,
+      "note": "Use Automated playbooks > Specialist field review. Unix collectors are transport only; consult guide before authorized use."
+    },
+    {
+      "name": "AVML",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/ENRICHMENT-TOOLS.md",
+      "status": "verified-unix-transport-only",
+      "lab": false,
+      "note": "Use Automated playbooks > Specialist field review. Unix collectors are transport only; consult guide before authorized use."
+    },
+    {
+      "name": "JADX",
+      "group": "Malware",
+      "action": "gui",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md",
+      "status": "staged-candidate",
+      "lab": false,
+      "note": "CLI known-JAR decompilation passed; GUI launch/operations unaccepted. Open acquired working copies only.",
+      "executable": "COC/apps/jadx/bin/jadx-gui.bat"
+    },
+    {
+      "name": "Apktool",
+      "group": "Malware",
+      "action": "help",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md",
+      "status": "synthetic-binary-manifest-passed",
+      "lab": false,
+      "note": "Advanced acquired-evidence submenu: fixed offline workflows. See guide for acceptance limits; no automatic host acquisition."
+    },
+    {
+      "name": "Cutter",
+      "group": "Malware",
+      "action": "help",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md",
+      "status": "startup-failed-reference-only",
+      "lab": false,
+      "note": "Advanced acquired-evidence submenu: fixed offline workflows. See guide for acceptance limits; no automatic host acquisition."
+    },
+    {
+      "name": "TestDisk",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md",
+      "status": "requires-admin-unaccepted",
+      "lab": false,
+      "note": "Advanced acquired-evidence submenu: fixed offline workflows. See guide for acceptance limits; no automatic host acquisition."
+    },
+    {
+      "name": "PhotoRec",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md",
+      "status": "requires-admin-carving-unaccepted",
+      "lab": false,
+      "note": "Advanced acquired-evidence submenu: fixed offline workflows. See guide for acceptance limits; no automatic host acquisition."
+    },
+    {
+      "name": "Apple UnifiedLogs",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md",
+      "status": "startup-passed-real-logs-unaccepted",
+      "lab": false,
+      "note": "Advanced acquired-evidence submenu: fixed offline workflows. See guide for acceptance limits; no automatic host acquisition."
+    },
+    {
+      "name": "YARA Forge full",
+      "group": "Malware",
+      "action": "help",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md",
+      "status": "rules-compiled-benign-scan-passed",
+      "lab": false,
+      "note": "Advanced acquired-evidence submenu: fixed offline workflows. See guide for acceptance limits; no automatic host acquisition."
+    },
+    {
+      "name": "MWCP",
+      "group": "Malware",
+      "action": "help",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md",
+      "status": "COC-plaintext-parser-passed",
+      "lab": false,
+      "note": "Advanced acquired-evidence submenu: fixed offline workflows. See guide for acceptance limits; no automatic host acquisition."
+    },
+    {
+      "name": "Malduck",
+      "group": "Malware",
+      "action": "help",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md",
+      "status": "COC-static-hash-parser-passed",
+      "lab": false,
+      "note": "Advanced acquired-evidence submenu: fixed offline workflows. See guide for acceptance limits; no automatic host acquisition."
+    },
+    {
+      "name": "TLSH Java",
+      "group": "Malware",
+      "action": "help",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md",
+      "status": "identical-and-changed-fixtures-passed",
+      "lab": false,
+      "note": "Advanced acquired-evidence submenu: fixed offline workflows. See guide for acceptance limits; no automatic host acquisition."
+    },
+    {
+      "name": "Thumbcache Viewer",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md",
+      "status": "CMD-startup-invalid-input-refusal-only",
+      "lab": false,
+      "note": "Advanced acquired-evidence submenu: fixed offline workflows. See guide for acceptance limits; no automatic host acquisition."
+    },
+    {
+      "name": "MITRE ATTACK",
+      "group": "Malware",
+      "action": "help",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md",
+      "status": "offline-search-passed",
+      "lab": false,
+      "note": "Advanced acquired-evidence submenu: fixed offline workflows. See guide for acceptance limits; no automatic host acquisition."
+    },
+    {
+      "name": "LOLBAS",
+      "group": "Malware",
+      "action": "help",
+      "help": "COC/docs/COMBINED-FIELD-TOOLS.md",
+      "status": "offline-search-passed",
+      "lab": false,
+      "note": "Advanced acquired-evidence submenu: fixed offline workflows. See guide for acceptance limits; no automatic host acquisition."
+    },
+    {
+      "name": "osqueryi",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md",
+      "status": "startup-and-constant-query-passed-live-collection-unaccepted",
+      "lab": false,
+      "note": "Automated playbooks > Field operations manager or response / reconstruction; see guide for exact scope and acceptance."
+    },
+    {
+      "name": "PyInstaller Extractor NG",
+      "group": "Malware",
+      "action": "help",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md",
+      "status": "startup-and-synthetic-info-passed-extraction-unaccepted",
+      "lab": false,
+      "note": "Automated playbooks > Field operations manager or response / reconstruction; see guide for exact scope and acceptance."
+    },
+    {
+      "name": "COC bounded CArchive extractor",
+      "group": "Malware",
+      "action": "help",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md",
+      "status": "synthetic-extraction-and-path-refusals-passed",
+      "lab": false,
+      "note": "Automated playbooks > Field operations manager or response / reconstruction; see guide for exact scope and acceptance."
+    },
+    {
+      "name": "COC server incident runbook",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md",
+      "status": "synthetic-case-finalization-passed",
+      "lab": false,
+      "note": "Automated playbooks > Field operations manager or response / reconstruction; see guide for exact scope and acceptance."
+    },
+    {
+      "name": "COC case correlation",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md",
+      "status": "synthetic-finalized-case-correlation-passed",
+      "lab": false,
+      "note": "Automated playbooks > Field operations manager or response / reconstruction; see guide for exact scope and acceptance."
+    },
+    {
+      "name": "Dissect container review",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md",
+      "status": "synthetic-container-user-extraction-passed",
+      "lab": false,
+      "note": "Automated playbooks > Field operations manager or response / reconstruction; see guide for exact scope and acceptance."
+    },
+    {
+      "name": "Zeek",
+      "group": "Lab",
+      "action": "help",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md",
+      "status": "offline-image-staged-runtime-unaccepted",
+      "lab": false,
+      "note": "Automated playbooks > Field operations manager or response / reconstruction; see guide for exact scope and acceptance."
+    },
+    {
+      "name": "Suricata",
+      "group": "Lab",
+      "action": "help",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md",
+      "status": "offline-image-and-rules-staged-runtime-unaccepted",
+      "lab": false,
+      "note": "Automated playbooks > Field operations manager or response / reconstruction; see guide for exact scope and acceptance."
+    },
+    {
+      "name": "Plaso",
+      "group": "Lab",
+      "action": "help",
+      "help": "COC/docs/RESPONSE-PLAYBOOKS.md",
+      "status": "offline-image-staged-runtime-unaccepted",
+      "lab": false,
+      "note": "Automated playbooks > Field operations manager or response / reconstruction; see guide for exact scope and acceptance."
+    },
+    {
+      "name": "COC guided incident selector",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/OPERATIONS-MANAGER.md",
+      "status": "controlled-decision-flow-passed-owner-menu-acceptance-pending",
+      "lab": false,
+      "note": "Automated playbooks > Field operations manager or response / reconstruction; see guide for exact scope and acceptance."
+    },
+    {
+      "name": "COC harmless practice check",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/OPERATIONS-MANAGER.md",
+      "status": "three-native-fixture-expectations-passed",
+      "lab": false,
+      "note": "Automated playbooks > Field operations manager or response / reconstruction; see guide for exact scope and acceptance."
+    },
+    {
+      "name": "COC evidence handoff packet",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/OPERATIONS-MANAGER.md",
+      "status": "synthetic-case-source-immutability-passed",
+      "lab": false,
+      "note": "Automated playbooks > Field operations manager or response / reconstruction; see guide for exact scope and acceptance."
+    },
+    {
+      "name": "COC offline freshness dashboard",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/OPERATIONS-MANAGER.md",
+      "status": "snapshot-age-and-unknown-currency-passed",
+      "lab": false,
+      "note": "Automated playbooks > Field operations manager or response / reconstruction; see guide for exact scope and acceptance."
+    },
+    {
+      "name": "COC generated log manager",
+      "group": "Acquisition",
+      "action": "help",
+      "help": "COC/docs/OPERATIONS-MANAGER.md",
+      "status": "synthetic-archive-cleanup-refusal-recovery-and-integrity-passed",
+      "lab": false,
+      "note": "Automated playbooks > Field operations manager or response / reconstruction; see guide for exact scope and acceptance."
+    }
+  ]
+}

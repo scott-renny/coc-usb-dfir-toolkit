@@ -1,0 +1,38 @@
+[
+  {
+    "name": "zeek",
+    "repository": "zeek/zeek",
+    "platform": "linux/amd64",
+    "manifest_digest": "sha256:3fac39de707be96cb1a8163cab98a11bb2a1aa9e3535247db0f17b9c4670a019",
+    "image_id": "sha256:c1d6d54ba2663fc4c33d4a11410d93b1dcab2f1f4c8c3e35f69a6d09e360e006",
+    "archive": "zeek-linux-amd64.oci.tar",
+    "sha256": "2c3360ff527141d29c1847fb3d63fe93f89894dbc7ac9442b43d4af09c25d983",
+    "bytes": 178073600,
+    "trust": "Content digests verified; project publisher image",
+    "runtime_tested": false
+  },
+  {
+    "name": "plaso",
+    "repository": "log2timeline/plaso",
+    "platform": "linux/amd64",
+    "manifest_digest": "sha256:a8d42e64dcd3af2dffed8ddb25d34f34def69b672eec97ea9af62885c9332950",
+    "image_id": "sha256:d74a2ac4ff5f71a17ed2104d5d2088e5e5c006928de4854b2dab47c87c770882",
+    "archive": "plaso-linux-amd64.oci.tar",
+    "sha256": "f416ae359628e21e19ce92be50887327560b6fa5dfe22ddd861cd1f8462a81e3",
+    "bytes": 151797760,
+    "trust": "Content digests verified; project publisher image",
+    "runtime_tested": false
+  },
+  {
+    "name": "suricata",
+    "repository": "jasonish/suricata",
+    "platform": "linux/amd64",
+    "manifest_digest": "sha256:bfcc801424f8b3b39ea1d95a76bb198e6ea9124b166185692042e4055405436c",
+    "image_id": "sha256:33d880848848fd08fc719b060f0c14568c64105a7c68966a945f436694422736",
+    "archive": "suricata-linux-amd64.oci.tar",
+    "sha256": "16d7d2745ca55a1cdc0a25b147a6b47154d7a68d8bed237dfc0bb1231e70493e",
+    "bytes": 142807040,
+    "trust": "Content digests verified; community maintainer image",
+    "runtime_tested": false
+  }
+]

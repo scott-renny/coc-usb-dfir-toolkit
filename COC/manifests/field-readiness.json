@@ -1,0 +1,547 @@
+[
+  {
+    "name": "bulk_extractor",
+    "status": "harmless-input-passed",
+    "note": "Official checksum matched; bounded email/URL profile passed. Full-image field acceptance pending."
+  },
+  {
+    "name": "RegRipper",
+    "status": "reference-only-startup-failed",
+    "note": "Official pinned source and Windows binaries; DLL relocation error. No alternate-runtime workaround."
+  },
+  {
+    "name": "hashdeep",
+    "status": "reference-only-startup-failed",
+    "note": "Official 4.4 package; DLL relocation error. Custom transfer verification does not claim hashdeep execution."
+  },
+  {
+    "name": "FakeNet-NG",
+    "status": "lab-transport-only",
+    "note": "Official 3.5 ZIP; not executed; separate isolated lab and driver acceptance required."
+  },
+  {
+    "name": "FTK Imager",
+    "status": "installer-transport-only",
+    "note": "Official 8.3.0.27 ZIP; installer Authenticode valid; not installed or acquired with."
+  },
+  {
+    "name": "SIFT",
+    "status": "verified-appliance-transport-only",
+    "note": "Complete publisher OVA and staged copy matched SANS SHA256; VM import/acceptance not performed."
+  },
+  {
+    "name": "capa",
+    "status": "reference-only-policy-blocked",
+    "note": "Prior Windows application-control block; not retried or bypassed."
+  },
+  {
+    "name": "ExifTool",
+    "status": "reference-only-startup-failed",
+    "note": "Prior DLL relocation error; unresolved."
+  },
+  {
+    "name": "ClamAV",
+    "status": "reference-only-updater-failed",
+    "note": "Prior updater failed; no validated signature database."
+  },
+  {
+    "name": "Velociraptor",
+    "status": "version-startup-passed",
+    "note": "Owner-observed version 0.77.3 exit 0; acquisition acceptance remains pending."
+  },
+  {
+    "name": "Existing tools",
+    "status": "retain-previous-acceptance",
+    "note": "See earlier startup and acceptance manifests. This release does not certify all tools, VM imports or acquisitions."
+  },
+  {
+    "name": "Custom field workflows",
+    "status": "local-validation-passed",
+    "note": "See field-acceptance.json and field-validation.json for exact scope. No boot testing."
+  },
+  {
+    "name": "MFTECmd",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "EvtxECmd",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "RECmd",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "AmcacheParser",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "PECmd",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "LECmd",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "JLECmd",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "SBECmd",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "RBCmd",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "AppCompatCacheParser",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "Chainsaw",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "WinPmem",
+    "status": "supervised-validation-pending",
+    "note": "Consult existing tool help; memory/raw-media collection requires separate lab acceptance. No automatic acquisition."
+  },
+  {
+    "name": "FullEventLogView",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "7-Zip",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "Volatility",
+    "status": "supervised-validation-pending",
+    "note": "Consult existing tool help; memory/raw-media collection requires separate lab acceptance. No automatic acquisition."
+  },
+  {
+    "name": "YARA",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "Sigma",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "testssl",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "Lynis",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "FLOSS",
+    "status": "staged-candidate",
+    "note": "Launch logged executable assessment: Detect It Easy, bstrings and FLOSS on acquired PE working copies."
+  },
+  {
+    "name": "CyberChef",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "DBBrowser",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "Hindsight",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "SrumECmd",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "SumECmd",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "WxTCmd",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "SQLECmd",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "RecentFileCacheParser",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "DFIR-ORC",
+    "status": "supervised-validation-pending",
+    "note": "Consult existing tool help; memory/raw-media collection requires separate lab acceptance. No automatic acquisition."
+  },
+  {
+    "name": "TimelineExplorer",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "RegistryExplorer",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "ALEAPP",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "MFTExplorer",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "ShellBagsExplorer",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "DidierStevens",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "iLEAPP",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "JumpListExplorer",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "EZViewer",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "Hayabusa",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "Dissect",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "Acquire",
+    "status": "supervised-validation-pending",
+    "note": "Consult existing tool help; memory/raw-media collection requires separate lab acceptance. No automatic acquisition."
+  },
+  {
+    "name": "oletools",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "GoReSym",
+    "status": "staged-candidate",
+    "note": "Recover symbols from acquired Windows Go executables. Non-Go inputs may be unsupported; no sample execution."
+  },
+  {
+    "name": "PE-bear",
+    "status": "staged-candidate",
+    "note": "PE header and structure examination"
+  },
+  {
+    "name": "PE-sieve",
+    "status": "staged-candidate",
+    "note": "One selected live PID; report-only; no dumping"
+  },
+  {
+    "name": "HollowsHunter",
+    "status": "staged-candidate",
+    "note": "One selected live PID; report-only; no continuous scan"
+  },
+  {
+    "name": "DetectItEasy",
+    "status": "staged-candidate",
+    "note": "File/compiler/packer identification"
+  },
+  {
+    "name": "YARA-X",
+    "status": "staged-candidate",
+    "note": "Open bundled CLI help; use selected reviewed rules on acquired working copies. Not an automated whole-host scan."
+  },
+  {
+    "name": "x64dbg",
+    "status": "staged-candidate",
+    "note": "Dynamic debugging inside isolated lab only"
+  },
+  {
+    "name": "dnSpyEx",
+    "status": "staged-candidate",
+    "note": ".NET examination; debugging only in isolated lab"
+  },
+  {
+    "name": "bstrings",
+    "status": "staged-candidate",
+    "note": "Launch logged executable assessment: Detect It Easy, bstrings and FLOSS on acquired PE working copies."
+  },
+  {
+    "name": "ImHex",
+    "status": "staged-candidate",
+    "note": "Structured binary examination"
+  },
+  {
+    "name": "Java",
+    "status": "previous-release-observation",
+    "note": "Retained from prior release; consult the existing startup/acceptance manifests. No new operational acceptance inferred."
+  },
+  {
+    "name": "NetworkMiner",
+    "status": "staged-candidate",
+    "note": "Free GUI capture-file reconstruction; CLI automation not assumed"
+  },
+  {
+    "name": "Ghidra",
+    "status": "staged-candidate",
+    "note": "Native executable decompilation and static examination"
+  },
+  {
+    "name": "Wireshark",
+    "status": "staged-candidate",
+    "note": "Portable Windows offline PCAP analysis; live capture requires host driver"
+  },
+  {
+    "name": "Autopsy",
+    "status": "transport-package-not-host-installed",
+    "note": "Signed/pinned workstation installer; not a portable GUI"
+  },
+  {
+    "name": "REMnux",
+    "status": "transport-package-not-host-installed",
+    "note": "Publisher-checksum verified transport appliance; VM import and lab validation pending"
+  },
+  {
+    "name": "Takajo",
+    "status": "synthetic-computer-task-views-passed",
+    "note": "Fixed offline commands only. Native EVTX conversion and real Sysmon process-tree acceptance pending."
+  },
+  {
+    "name": "SQLite Dissect",
+    "status": "synthetic-database-WAL-carving-run-passed",
+    "note": "Basic and WAL row extraction passed. Deleted-record recovery not established. Fresh WAL base with zero encoding is an explicit upstream limitation."
+  },
+  {
+    "name": "libpff",
+    "status": "imports-and-invalid-input-refusal-passed",
+    "note": "PST/OST workflow implemented; known-valid mailbox and attachment acceptance pending."
+  },
+  {
+    "name": "RDP bitmap tools",
+    "status": "synthetic-RDP8-tile-passed",
+    "note": "One expected bitmap extracted. Real-session forensic interpretation remains unvalidated."
+  },
+  {
+    "name": "Windows symbols",
+    "status": "298-symbol-schemas-validated",
+    "note": "Pinned JPCERT/CC ntkrnlmp/tcpip collection. Exact image-to-symbol match not tested."
+  },
+  {
+    "name": "MemProcFS",
+    "status": "workstation-transport-only",
+    "note": "Official 5.19 ZIP; not executed, mounted or installed."
+  },
+  {
+    "name": "Specialist workflows",
+    "status": "local-harmless-acceptance-passed",
+    "note": "Email, Linux text, persistence exports, comparison, export, transfer and practice. No live collection or uploads."
+  },
+  {
+    "name": "Unfurl",
+    "status": "offline-synthetic-URL-interpretation-passed",
+    "note": "Harmless fixed-workflow acceptance only; Unix tools have not been executed. Refer to ENRICHMENT-TOOLS.md for limitations."
+  },
+  {
+    "name": "extract-msg",
+    "status": "synthetic-MSG-subject-body-passed",
+    "note": "Harmless fixed-workflow acceptance only; Unix tools have not been executed. Refer to ENRICHMENT-TOOLS.md for limitations."
+  },
+  {
+    "name": "Binary Refinery",
+    "status": "fixed-base64-hex-only-passed",
+    "note": "Harmless fixed-workflow acceptance only; Unix tools have not been executed. Refer to ENRICHMENT-TOOLS.md for limitations."
+  },
+  {
+    "name": "UAC",
+    "status": "verified-unix-transport-only",
+    "note": "Harmless fixed-workflow acceptance only; Unix tools have not been executed. Refer to ENRICHMENT-TOOLS.md for limitations."
+  },
+  {
+    "name": "AVML",
+    "status": "verified-unix-transport-only",
+    "note": "Harmless fixed-workflow acceptance only; Unix tools have not been executed. Refer to ENRICHMENT-TOOLS.md for limitations."
+  },
+  {
+    "name": "JADX",
+    "status": "synthetic-JAR-decompilation-passed",
+    "note": "See combined field guide; parser completion is not full forensic acceptance."
+  },
+  {
+    "name": "Apktool",
+    "status": "synthetic-binary-manifest-passed",
+    "note": "See combined field guide; parser completion is not full forensic acceptance."
+  },
+  {
+    "name": "Cutter",
+    "status": "startup-failed-reference-only",
+    "note": "See combined field guide; parser completion is not full forensic acceptance."
+  },
+  {
+    "name": "TestDisk",
+    "status": "requires-admin-unaccepted",
+    "note": "See combined field guide; parser completion is not full forensic acceptance."
+  },
+  {
+    "name": "PhotoRec",
+    "status": "requires-admin-carving-unaccepted",
+    "note": "See combined field guide; parser completion is not full forensic acceptance."
+  },
+  {
+    "name": "Apple UnifiedLogs",
+    "status": "startup-passed-real-logs-unaccepted",
+    "note": "See combined field guide; parser completion is not full forensic acceptance."
+  },
+  {
+    "name": "YARA Forge full",
+    "status": "rules-compiled-benign-scan-passed",
+    "note": "See combined field guide; parser completion is not full forensic acceptance."
+  },
+  {
+    "name": "MWCP",
+    "status": "COC-plaintext-parser-passed",
+    "note": "See combined field guide; parser completion is not full forensic acceptance."
+  },
+  {
+    "name": "Malduck",
+    "status": "COC-static-hash-parser-passed",
+    "note": "See combined field guide; parser completion is not full forensic acceptance."
+  },
+  {
+    "name": "TLSH Java",
+    "status": "identical-and-changed-fixtures-passed",
+    "note": "See combined field guide; parser completion is not full forensic acceptance."
+  },
+  {
+    "name": "Thumbcache Viewer",
+    "status": "CMD-startup-invalid-input-refusal-only",
+    "note": "See combined field guide; parser completion is not full forensic acceptance."
+  },
+  {
+    "name": "MITRE ATTACK",
+    "status": "offline-search-passed",
+    "note": "See combined field guide; parser completion is not full forensic acceptance."
+  },
+  {
+    "name": "LOLBAS",
+    "status": "offline-search-passed",
+    "note": "See combined field guide; parser completion is not full forensic acceptance."
+  },
+  {
+    "name": "osqueryi",
+    "status": "startup-and-constant-query-passed-live-collection-unaccepted",
+    "note": "Local synthetic acceptance differs from real-evidence and lab runtime acceptance."
+  },
+  {
+    "name": "PyInstaller Extractor NG",
+    "status": "startup-and-synthetic-info-passed-extraction-unaccepted",
+    "note": "Local synthetic acceptance differs from real-evidence and lab runtime acceptance."
+  },
+  {
+    "name": "COC bounded CArchive extractor",
+    "status": "synthetic-extraction-and-path-refusals-passed",
+    "note": "Local synthetic acceptance differs from real-evidence and lab runtime acceptance."
+  },
+  {
+    "name": "COC server incident runbook",
+    "status": "synthetic-case-finalization-passed",
+    "note": "Local synthetic acceptance differs from real-evidence and lab runtime acceptance."
+  },
+  {
+    "name": "COC case correlation",
+    "status": "synthetic-finalized-case-correlation-passed",
+    "note": "Local synthetic acceptance differs from real-evidence and lab runtime acceptance."
+  },
+  {
+    "name": "Dissect container review",
+    "status": "synthetic-container-user-extraction-passed",
+    "note": "Local synthetic acceptance differs from real-evidence and lab runtime acceptance."
+  },
+  {
+    "name": "Zeek",
+    "status": "offline-image-staged-runtime-unaccepted",
+    "note": "Local synthetic acceptance differs from real-evidence and lab runtime acceptance."
+  },
+  {
+    "name": "Suricata",
+    "status": "offline-image-and-rules-staged-runtime-unaccepted",
+    "note": "Local synthetic acceptance differs from real-evidence and lab runtime acceptance."
+  },
+  {
+    "name": "Plaso",
+    "status": "offline-image-staged-runtime-unaccepted",
+    "note": "Local synthetic acceptance differs from real-evidence and lab runtime acceptance."
+  },
+  {
+    "name": "COC guided incident selector",
+    "status": "controlled-decision-flow-passed-owner-menu-acceptance-pending",
+    "note": "Local synthetic acceptance differs from real-evidence and lab runtime acceptance."
+  },
+  {
+    "name": "COC harmless practice check",
+    "status": "three-native-fixture-expectations-passed",
+    "note": "Local synthetic acceptance differs from real-evidence and lab runtime acceptance."
+  },
+  {
+    "name": "COC evidence handoff packet",
+    "status": "synthetic-case-source-immutability-passed",
+    "note": "Local synthetic acceptance differs from real-evidence and lab runtime acceptance."
+  },
+  {
+    "name": "COC offline freshness dashboard",
+    "status": "snapshot-age-and-unknown-currency-passed",
+    "note": "Local synthetic acceptance differs from real-evidence and lab runtime acceptance."
+  },
+  {
+    "name": "COC generated log manager",
+    "status": "synthetic-archive-cleanup-refusal-recovery-and-integrity-passed",
+    "note": "Local synthetic acceptance differs from real-evidence and lab runtime acceptance."
+  }
+]

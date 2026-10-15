@@ -1,0 +1,10 @@
+{
+  "status": "local-publication-checks-passed",
+  "standalone_response_tests": 20,
+  "staged_toolkit_tests": 128,
+  "desktop_mobile_theme_navigation_and_journal_search": "passed",
+  "private_paths_device_identifiers_and_vendor_payloads": "excluded",
+  "menu_graphic": "Source-rendered preview, not a device screenshot",
+  "boot_tested": false,
+  "live_deployment_verification": "Pending publication"
+}
