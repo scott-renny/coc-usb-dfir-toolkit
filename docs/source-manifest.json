@@ -323,8 +323,8 @@
     },
     {
       "path": "docs/publication-validation.json",
-      "bytes": 411,
-      "sha256": "3d11f80b9a1e38deca56c3b0af2333bcfcbdb7b0e7c63be60ba8997af4df03e5"
+      "bytes": 805,
+      "sha256": "95c9abe8fbaaab45f4c89ebe2e07e4bad87f6ac2029813f588e84a18468540c0"
     },
     {
       "path": "docs/source-edition.md",

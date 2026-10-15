@@ -1,10 +1,17 @@
 {
-  "status": "local-publication-checks-passed",
+  "status": "published-and-live-verified",
   "standalone_response_tests": 20,
   "staged_toolkit_tests": 128,
   "desktop_mobile_theme_navigation_and_journal_search": "passed",
   "private_paths_device_identifiers_and_vendor_payloads": "excluded",
   "menu_graphic": "Source-rendered preview, not a device screenshot",
   "boot_tested": false,
-  "live_deployment_verification": "Pending publication"
+  "live_deployment_verification": "Standalone repository, portfolio pages and share images verified after publishing",
+  "verified_utc": "2026-10-15T01:50:00.131948+00:00",
+  "standalone_repository": "https://github.com/scott-renny/coc-usb-dfir-toolkit",
+  "source_publication_baseline_commit": "80554ca925758854e0621a827e053b06d9f1e64a",
+  "published_files_checked": 86,
+  "live_urls_checked": 9,
+  "usb1_repository_unchanged": true,
+  "linkedin_posted": false
 }
